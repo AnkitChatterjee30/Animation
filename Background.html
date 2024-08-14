@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    body {
+        animation: slider 2s infinite linear;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 200px;
+        animation: colourchange 2s infinite linear;
+    }
+
+    .box {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 20%;
+        animation: boxlargesmall 2s infinite linear;
+    }
+
+    .circle {
+        position: fixed;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 70%;
+        animation: circlelargesmall 2s infinite linear;
+    }
+
+    .bulb1 {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        border-radius: 50%;
+        top: 10%;
+        left: 5%;
+        animation: bulb1 0.5s infinite linear;
+    }
+
+    @keyframes bulb1 {
+        0% {
+            background-color: black;
+        }
+
+        100% {
+            background-color: white;
+        }
+
+    }
+
+    .bulb2 {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        border-radius: 50%;
+        top: 10%;
+        right: 5%;
+        animation: bulb2 0.5s infinite linear;
+    }
+
+    @keyframes bulb2 {
+        0% {
+            background-color: white;
+        }
+
+        100% {
+            background-color: black;
+        }
+    }
+
+    .bulb3 {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        border-radius: 50%;
+        bottom: 10%;
+        left: 5%;
+        animation: bulb3 0.5s infinite linear;
+    }
+
+    @keyframes bulb3 {
+        0% {
+            background-color: white;
+        }
+
+        100% {
+            background-color: black;
+        }
+    }
+
+    .bulb4 {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        border-radius: 50%;
+        bottom: 10%;
+        right: 5%;
+        animation: bulb4 0.5s infinite linear;
+    }
+
+    @keyframes bulb4 {
+        0% {
+            background-color: black;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
+
+    @keyframes boxlargesmall {
+        0% {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        8% {
+            width: 180px;
+            height: 180px;
+            background-color: indigo;
+        }
+
+        16% {
+            width: 160px;
+            height: 160px;
+            background-color: blue;
+        }
+
+        25% {
+            width: 140px;
+            height: 140px;
+            background-color: green;
+        }
+
+        33% {
+            width: 120px;
+            height: 120px;
+            background-color: yellow;
+        }
+
+        42% {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        50% {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+        }
+
+        58% {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        67% {
+            width: 120px;
+            height: 120px;
+            background-color: yellow;
+        }
+
+        75% {
+            width: 140px;
+            height: 140px;
+            background-color: green;
+        }
+
+        83% {
+            width: 160px;
+            height: 160px;
+            background-color: blue;
+        }
+
+        92% {
+            width: 180px;
+            height: 180px;
+            background-color: indigo;
+        }
+
+        100% {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+    }
+
+    @keyframes circlelargesmall {
+        0% {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+        }
+
+        8% {
+            width: 100px;
+            height: 100px;
+            background-color: indigo;
+        }
+
+        16% {
+            width: 120px;
+            height: 120px;
+            background-color: blue;
+        }
+
+        25% {
+            width: 140px;
+            height: 140px;
+            background-color: green;
+        }
+
+        33% {
+            width: 160px;
+            height: 160px;
+            background-color: yellow;
+        }
+
+        42% {
+            width: 180px;
+            height: 180px;
+            background-color: orange;
+        }
+
+        50% {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        58% {
+            width: 180px;
+            height: 180px;
+            background-color: orange;
+        }
+
+        67% {
+            width: 160px;
+            height: 160px;
+            background-color: yellow;
+        }
+
+        75% {
+            width: 140px;
+            height: 140px;
+            background-color: green;
+        }
+
+        83% {
+            width: 120px;
+            height: 120px;
+            background-color: blue;
+        }
+
+        92% {
+            width: 100px;
+            height: 100px;
+            background-color: indigo;
+        }
+
+        100% {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+        }
+
+    }
+
+    @keyframes slider {
+        0% {
+            background-image: linear-gradient(to right, purple, indigo, blue, green, yellow, orange, red);
+        }
+
+        14% {
+            background-image: linear-gradient(to right, indigo, blue, green, yellow, orange, red, purple);
+        }
+
+        28% {
+            background-image: linear-gradient(to right, blue, green, yellow, orange, red, purple, indigo);
+        }
+
+        42% {
+            background-image: linear-gradient(to right, green, yellow, orange, red, purple, indigo, blue);
+        }
+
+        56% {
+            background-image: linear-gradient(to right, yellow, orange, red, purple, indigo, blue, green);
+        }
+
+        70% {
+            background-image: linear-gradient(to right, orange, red, purple, indigo, blue, green, yellow, );
+        }
+
+        85% {
+            background-image: linear-gradient(to right, red, purple, indigo, blue, green, yellow, orange, );
+        }
+
+        100% {
+            background-image: linear-gradient(to right, purple, indigo, blue, green, yellow, orange, red);
+        }
+
+    }
+
+    @keyframes colourchange {
+        0% {
+            color: black;
+        }
+
+        11% {
+            color: purple;
+        }
+
+        22% {
+            color: indigo;
+        }
+
+        33% {
+            color: blue;
+        }
+
+        44% {
+            color: green;
+        }
+
+        55% {
+            color: yellow;
+        }
+
+        66% {
+            color: orange;
+        }
+
+        77% {
+            color: red;
+        }
+
+        88% {
+            color: white;
+        }
+
+        100% {
+            color: black;
+        }
+
+    }
+
+
+    .animation_loader {
+        display: flex;
+        margin-top: -150px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .s {
+        border: 10px solid;
+        animation: roundrotation 9s linear infinite;
+    }
+
+    @keyframes roundrotation {
+        0% {
+            transform: rotate(0);
+            border-color: purple;
+        }
+
+        16% {
+            border-color: indigo;
+        }
+
+        33% {
+            border-color: blue;
+        }
+
+        50%{
+            transform: rotate(360deg);
+            border-color: green;
+        }
+
+        67% {
+            border-color: yellow;
+        }
+
+        83%{
+            border-color: orange;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            border-color: red;
+        }
+    }
+</style>
+
+<body>
+    <h1>Ankit Chatterjee</h1>
+    <div class="box"></div>
+    <div class="circle"></div>
+    <div class="bulb1"></div>
+    <div class="bulb2"></div>
+    <div class="bulb3"></div>
+    <div class="bulb4"></div>
+    <section class="animation_loader">
+        <div class="s">
+            <div class="s">
+                <div class="s">
+                    <div class="s">
+                        <div class="s">
+                            <div class="s">
+                                <div class="s">
+                                    <div class="s">
+                                        <div class="s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
